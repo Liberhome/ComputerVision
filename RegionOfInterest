@@ -1,0 +1,17 @@
+import cv2 as cv
+import matplotlib.pyplot as plt
+import numpy as np
+
+img=cv.imread('catlina.png')
+island=img[0:90,0:200]
+
+#颜色通道获取
+b,g,r=cv.split(img)
+print(b)
+print('********************')
+print(b.shape)
+print(g.shape)
+print(r.shape)
+print(img.shape)
+
+
